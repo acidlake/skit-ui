@@ -2,6 +2,7 @@
   "name": "skit-ui",
   "version": "0.0.1",
   "author": "Jeremias Nunez",
+
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -12,7 +13,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/adapter-netlify": "^1.0.0-next.0",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.33",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.0",
     "eslint": "^7.32.0",
@@ -21,6 +22,7 @@
     "prettier": "^2.4.1",
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.44.0",
+    "svelte2tsx": "^0.4.10",
     "tailwindcss": "^2.2.19"
   },
   "type": "module"
