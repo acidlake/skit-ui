@@ -1,31 +1,111 @@
 <script>
-  import { Text, Paragraph } from "$lib/typograhy";
+  import { Text, List, Paragraph, Code } from "$lib/typograhy";
+
+  const items = [
+        {label: 'When you need copyable/editable/ellipsis texts.', bold: false},
+        {label: 
+          'When need to display a title or paragraph contents in Articles/Blogs/Notes.', 
+          href: '/',
+          bold: false
+        }
+      ]
+
+const code_text =`
+# Import the component
+import { Text } from "skit-ui/typograhy"
+
+  <Text level={6} text="h1. Skit Ui" />
+  <Text level={5} text="h2. Skit Ui" />
+  <Text level={4} text="h3. Skit Ui" />
+  <Text level={3} text="h4. Skit Ui" />
+  <Text level={2} text="h5. Skit Ui" />
+  <Text level={1} text="h6. Skit Ui" />
+`;
+const code_color =`
+# Import the component
+import { Text } from "skit-ui/typograhy"
+
+  <Text level={1} text="h1. Skit Ui" />
+  <Text level={1} text="h1. Skit Ui" type="secondary" />
+  <Text level={1} text="h2. Skit Ui" type="success" />
+  <Text level={1} text="h3. Skit Ui" type="warning" />
+  <Text level={1} text="h4. Skit Ui" type="danger"/>
+`;
+
+const code_paragraph =`
+# Import the component
+import { Paragraph } from "skit-ui/typograhy"
+      <Paragraph>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </Paragraph>
+      <Paragraph  type="secondary">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </Paragraph>
+      <Paragraph  type="danger">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </Paragraph>
+      <Paragraph  type="warning">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </Paragraph>
+      <Paragraph  type="success">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </Paragraph>
+`;
 </script>
+<svelte:head>
+  <title>Typography Skit UI</title>
+</svelte:head>
 <div class="y-6 p-4 rounded-lg shadow-lg bg-white mb-4">
-  <h1 class="text-3xl font-medium font-roboto text-gray-600">Typography</h1>
-  <p class="text-gray-600 font-roboto">
+  <Text level={3} bold text="Typography" />
+  <Paragraph>
     Basic text writing, including headings, body text, lists, and more.
-  </p>
+  </Paragraph>
+
+  <List {items} />
 
   <div class="text-gray-600 mt-6">
-    <Text>When To Use</Text>
-    <ul class="list-disc p-6">
-      <li>
-        <Text level={1}>
-          When need to display a title or paragraph <a href="#" class="text-blue-500 hover:underline">link</a> contents in Articles/Blogs/Notes.
-        </Text>
-      </li>
-      <li>When you need copyable/editable/ellipsis texts.</li>
-    </ul>
+    <Text level={6} text="h1. Skit Ui" />
+    <Text level={5} text="h2. Skit Ui" />
+    <Text level={4} text="h3. Skit Ui" />
+    <Text level={3} text="h4. Skit Ui" />
+    <Text level={2} text="h5. Skit Ui" />
+    <Text level={1} text="h6. Skit Ui" />
   </div>
-  <div class="mt-4">
-    <Paragraph level={1} type="secondary">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
-    </Paragraph>
-    <Paragraph>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
-      
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, est obcaecati, voluptas ab delectus sapiente quibusdam, aspernatur quisquam aut aliquid eius quos ut nam eos excepturi quod. Ullam reprehenderit sed laboriosam quos beatae dicta. Expedita blanditiis facilis odit veritatis libero perferendis aspernatur labore? Velit tempore repellendus fugit debitis, corrupti sed.
-    </Paragraph>
+  <Code language="r" code="{code_text}" header=""/>
+
+  <div class="mt-10 grid">
+    <Text level={3} bold text="Colors" />
+    <div class="text-gray-600 mt-6">
+      <Text level={1} text="h1. Skit Ui" />
+      <Text level={1} text="h1. Skit Ui" type="secondary" />
+      <Text level={1} text="h2. Skit Ui" type="success" />
+      <Text level={1} text="h3. Skit Ui" type="warning" />
+      <Text level={1} text="h4. Skit Ui" type="danger"/>
+    </div>
+    <Code language="r" code="{code_color}" header=""/>
   </div>
+
+  <div class="mt-10 grid">
+    <Text level={3} bold text="Paragraph" />
+    <div class="text-gray-600 mt-6">
+      <Paragraph>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
+      </Paragraph>
+      <Paragraph  type="secondary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
+      </Paragraph>
+      <Paragraph  type="danger">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
+      </Paragraph>
+      <Paragraph  type="warning">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
+      </Paragraph>
+      <Paragraph  type="success">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti quia repellat inventore deserunt aliquid illo vitae deleniti unde aut? Velit numquam ab corporis veritatis enim sint aspernatur ad voluptates!
+      </Paragraph>
+    </div>
+    <Code language="r" code="{code_paragraph}" header=""/>
+  </div>
+
+ 
 </div>
