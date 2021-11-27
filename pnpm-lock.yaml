@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/adapter-auto': next
+  '@sveltejs/adapter-netlify': ^1.0.0-next.0
   '@sveltejs/kit': next
   autoprefixer: ^10.4.0
   eslint: ^7.32.0
@@ -14,6 +15,7 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.3
+  '@sveltejs/adapter-netlify': 1.0.0-next.0
   '@sveltejs/kit': 1.0.0-next.201_svelte@3.44.2
   autoprefixer: 10.4.0
   eslint: 7.32.0
@@ -123,6 +125,12 @@ packages:
     resolution: {integrity: sha512-4Q7ZuoMck7wwzIO7gd8gqnm7gWflztTDHU/C1DzLr8V2UprQFQwsUE/padtQhFPXkgAiXJ8AwLksey4A8qjOsA==}
     dependencies:
       esbuild: 0.13.15
+    dev: true
+
+  /@sveltejs/adapter-netlify/1.0.0-next.0:
+    resolution: {integrity: sha512-CxjWlGkNyQzEB9LsXN+MvF1Z+SHRb16cNZL8sy5bUcytDcf7ETjlgKdaxks7ygWBhI/wtx4Mcxr+uIt50p8vag==}
+    dependencies:
+      toml: 3.0.0
     dev: true
 
   /@sveltejs/adapter-netlify/1.0.0-next.35:
@@ -1690,6 +1698,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /toml/3.0.0:
+    resolution: {integrity: sha512-y/mWCZinnvxjTKYhJ+pYxwD0mRLVvOtdS2Awbgxln6iEnt4rk0yBxeSBHkGJcPucRiG0e55mwWp+g/05rsrd6w==}
     dev: true
 
   /type-check/0.4.0:
