@@ -10,9 +10,13 @@ specifiers:
   eslint-plugin-svelte3: ^3.2.1
   prettier: ^2.4.1
   prettier-plugin-svelte: ^2.4.0
+  skit-ui: ^0.0.2
   svelte: ^3.44.0
   svelte2tsx: ^0.4.10
   tailwindcss: ^2.2.19
+
+dependencies:
+  skit-ui: 0.0.2
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.3
@@ -1575,6 +1579,10 @@ packages:
     dependencies:
       is-arrayish: 0.3.2
     dev: true
+
+  /skit-ui/0.0.2:
+    resolution: {integrity: sha512-VEs52jQ3EiLD1AOJa2Naeb953tnJc18JDMZa92W+wYSd41/Lx9S5ofeBpcSs+caoEK4CgsOHOFavTSmSW/vlBw==}
+    dev: false
 
   /slice-ansi/4.0.0:
     resolution: {integrity: sha512-qMCMfhY040cVHT43K9BFygqYbUPFZKHOg7K73mtTWJRb8pyP3fzf4Ixd5SzdEJQ6MRUg/WBnOLxghZtKKurENQ==}

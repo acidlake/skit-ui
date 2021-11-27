@@ -1,8 +1,7 @@
 {
   "name": "skit-ui",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Jeremias Nunez",
-
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -29,5 +28,8 @@
     "svelte2tsx": "^0.4.10",
     "tailwindcss": "^2.2.19"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "skit-ui": "^0.0.2"
+  }
 }
